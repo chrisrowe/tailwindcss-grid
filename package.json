@@ -1,0 +1,28 @@
+{
+  "name": "tailwindcss-grid",
+  "version": "1.0.0",
+  "description": "CSS grid plugin for tailwindcss framework",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisrowe/tailwindcss-grid.git"
+  },
+  "keywords": [
+    "tailwind",
+    "tailwindcss",
+    "plugin",
+    "tailwindcss-plugin"
+  ],
+  "author": "chrisrowe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisrowe/tailwindcss-grid/issues"
+  },
+  "homepage": "https://github.com/chrisrowe/tailwindcss-grid#readme",
+  "devDependencies": {
+    "lodash": "^4.17.5"
+  }
+}
