@@ -1,5 +1,7 @@
 # CSS Grid Tailwind Plugin
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/chrisrowe/tailwindcss-grid.svg)](https://greenkeeper.io/)
+
 Isolated from [https://github.com/tailwindcss/plugin-examples](https://github.com/tailwindcss/plugin-examples)
 
 [View demo](https://tailwindcss.github.io/plugin-examples/#css-grid) &middot; [View source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/css-grid/index.js)
