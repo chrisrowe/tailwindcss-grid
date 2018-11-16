@@ -21,7 +21,7 @@ module.exports = {
 
   plugins: [
     // ...
-    require('./plugins/css-grid')({
+    require('tailwindcss-grid')({
       grids: [2, 3, 5, 6, 8, 10, 12],
       colwidth: [5, 10, 15, 20], // in REM
       gaps: {
