@@ -1,6 +1,11 @@
 const _ = require('lodash')
 
-module.exports = function ({ grids = _.range(1, 12), gaps = {}, colwidth = {}, variants = ['responsive']}) {
+module.exports = function ({
+  grids = _.range(1, 12),
+  gaps = {},
+  autoMinWidths = {},
+  variants = ['responsive']
+}) {
   return function ({ e, addUtilities }) {
     addUtilities([
       { '.grid': { display: 'grid' } },
@@ -13,10 +18,10 @@ module.exports = function ({ grids = _.range(1, 12), gaps = {}, colwidth = {}, v
           gridTemplateColumns: `repeat(${columns}, 1fr)`,
         }
       })),
-      ...colwidth.map(gridwidth => ({
-        [`.auto-grid-${gridwidth}`]: {
-          gridTemplateColumns: `repeat(auto-fit, minmax(${gridwidth}rem, 1fr))`,
-        }
+      ..._.map(autoMinWidths, (size, name) => ({
+        [`.${e(`grid-automin-${name}`)}`]: {
+          gridTemplateColumns: `repeat(auto-fit, minmax(${size}, 1fr))`
+        },
       })),
       ..._.range(1, _.max(grids) + 1).map(span => ({
         [`.col-span-${span}`]: {

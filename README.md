@@ -11,8 +11,8 @@ In `plugins/css-grid/index.js` you'll find an example of a plugin that adds new 
 It exposes four configuration options:
 
 - `grids`, for specifying all of the grid sizes you'd like to generate
-- `colwidth` for applying min width for the auto-grid
 - `gaps`, for specifying the gap sizes you'd like to generate
+- `autoMinWidths` for specifying min width to columns using auto-fit and minmax
 - `variants`, for specifying which variants to generate
 
 ```js
@@ -23,11 +23,15 @@ module.exports = {
     // ...
     require('tailwindcss-grid')({
       grids: [2, 3, 5, 6, 8, 10, 12],
-      colwidth: [5, 10, 15, 20], // in REM
       gaps: {
         0: '0',
         4: '1rem',
         8: '2rem',
+      },
+      autoMinWidths: {
+        '16': '4rem',
+        '24': '6rem',
+        '300px': '300px'
       },
       variants: ['responsive'],
     }),
@@ -41,11 +45,12 @@ The plugin generates the following sets of classes:
 
 - `.grid`, for setting `display: grid` on an element
 - `.grid-columns-{size}`, for specifying the number of columns in the grid
-- `.auto-grid-{size}`, for specifying the minimum width of the columns generated with auto-grid
-- `.grid-gap-{size}`, for specifying the size of the gap between columns/rows
 - `.col-span-{columns}`, for specifying how wide a cell should be
+- `.grid-gap-{size}`, for specifying the size of the gap between columns/rows
+- `.grid-automin-{size}`, for applying the minimum width of the columns using auto-fit and minmax (the max is 1fr)
 - `.col-start-{line}` and `.col-end-{line}`, for specifying a cell's start and end points explicitly (useful for reordering cells or leaving gaps)
 - `.row-span-{columns}`, for specifying how tall a cell should be
 - `.row-start-{line}` and `.row-end-{line}`, for specifying a cell's start and end points explicitly (useful for reordering cells or leaving gaps)
+- `.grid-dense` applies `grid-auto-flow: dense`
 
 It's not really practical to expose all of the power of CSS Grid through utilities, but this plugin is a good example of using CSS Grid to replace a cell-only float or Flexbox grid.
