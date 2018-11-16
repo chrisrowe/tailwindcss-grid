@@ -1,6 +1,6 @@
 {
   "name": "tailwindcss-grid",
-  "version": "1.0.4",
+  "version": "1.0.3",
   "description": "CSS grid plugin for tailwindcss framework",
   "main": "index.js",
   "scripts": {
