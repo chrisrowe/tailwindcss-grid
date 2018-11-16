@@ -20,7 +20,7 @@ module.exports = {
 
   plugins: [
     // ...
-    require('./plugins/css-grid')({
+    require('tailwindcss-grid')({
       grids: [2, 3, 5, 6, 8, 10, 12],
       gaps: {
         0: '0',
