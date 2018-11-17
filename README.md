@@ -2,10 +2,10 @@
 
 ## Configuration options:
 
-- `grids`, for specifying all of the grid sizes you'd like to generate
-- `gaps`, for specifying the gap sizes you'd like to generate
+- `grids` for specifying all of the grid sizes you'd like to generate
+- `gaps` for specifying the gap sizes you'd like to generate
 - `autoMinWidths` for specifying min width to columns using auto-fit and minmax
-- `variants`, for specifying which variants to generate
+- `variants` for specifying which variants to generate
 
 ```js
 module.exports = {
@@ -49,8 +49,8 @@ It's not really practical to expose all of the power of CSS Grid through utiliti
 
 ---
 
-This was originally isolated from [https://github.com/tailwindcss/plugin-examples](https://github.com/tailwindcss/plugin-examples) to publish to npm
+This repo was originally isolated from [https://github.com/tailwindcss/plugin-examples](https://github.com/tailwindcss/plugin-examples) to publish to npm. Credit and thanks to @adamwathan
 
-[View demo](https://tailwindcss.github.io/plugin-examples/#css-grid) &middot; [View source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/css-grid/index.js)
+[View original demo](https://tailwindcss.github.io/plugin-examples/#css-grid)
 
 ![](https://user-images.githubusercontent.com/4323180/37525015-fb5c78f2-2901-11e8-97be-18c66d12bf84.png)
