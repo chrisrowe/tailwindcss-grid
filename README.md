@@ -1,6 +1,6 @@
 # CSS Grid Tailwind Plugin
 
-## Configuration options:
+## Configuration options
 
 - `grids` for specifying all of the grid sizes you'd like to generate
 - `gaps` for specifying the gap sizes you'd like to generate
@@ -33,7 +33,7 @@ module.exports = {
 
 With zero configuration, it will generate grids from 1 to 12 columns in size, no gap sizes, and `responsive` variants for each new utility.
 
-## Classes
+## Generated classes
 
 The plugin generates the following sets of classes:
 
