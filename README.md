@@ -33,6 +33,8 @@ module.exports = {
 
 With zero configuration, it will generate grids from 1 to 12 columns in size, no gap sizes, and `responsive` variants for each new utility.
 
+## Classes
+
 The plugin generates the following sets of classes:
 
 - `.grid` for setting `display: grid` on an element
@@ -48,6 +50,8 @@ The plugin generates the following sets of classes:
 It's not really practical to expose all of the power of CSS Grid through utilities, but this plugin is a good example of using CSS Grid to replace a cell-only float or Flexbox grid.
 
 ---
+
+### Credit
 
 This repo was originally isolated from [https://github.com/tailwindcss/plugin-examples](https://github.com/tailwindcss/plugin-examples) to publish to npm. Credit and thanks to [https://github.com/adamwathan](@adamwathan)
 
