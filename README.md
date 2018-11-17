@@ -18,7 +18,7 @@ module.exports = {
       gaps: {
         0: '0',
         4: '1rem',
-        8: '2rem',
+        8: '2rem'
       },
       autoMinWidths: {
         '16': '4rem',
