@@ -35,13 +35,13 @@ With zero configuration, it will generate grids from 1 to 12 columns in size, no
 
 The plugin generates the following sets of classes:
 
-- `.grid`, for setting `display: grid` on an element
-- `.grid-columns-{size}`, for specifying the number of columns in the grid
-- `.col-span-{columns}`, for specifying how wide a cell should be
-- `.grid-gap-{size}`, for specifying the size of the gap between columns/rows
-- `.grid-automin-{size}`, for applying the minimum width of the columns using auto-fit and minmax (the max is 1fr)
-- `.col-start-{line}` and `.col-end-{line}`, for specifying a cell's start and end points explicitly (useful for reordering cells or leaving gaps)
-- `.row-span-{columns}`, for specifying how tall a cell should be
+- `.grid` for setting `display: grid` on an element
+- `.grid-columns-{size}` for specifying the number of columns in the grid
+- `.col-span-{columns}` for specifying how wide a cell should be
+- `.grid-gap-{size}` for specifying the size of the gap between columns/rows
+- `.grid-automin-{size}` for applying the minimum width of the columns using auto-fit and minmax (the max is 1fr)
+- `.col-start-{line}` and `.col-end-{line}` for specifying a cell's start and end points explicitly (useful for reordering cells or leaving gaps)
+- `.row-span-{columns}` for specifying how tall a cell should be
 - `.row-start-{line}` and `.row-end-{line}`, for specifying a cell's start and end points explicitly (useful for reordering cells or leaving gaps)
 - `.grid-dense` applies `grid-auto-flow: dense`
 
@@ -49,7 +49,7 @@ It's not really practical to expose all of the power of CSS Grid through utiliti
 
 ---
 
-This repo was originally isolated from [https://github.com/tailwindcss/plugin-examples](https://github.com/tailwindcss/plugin-examples) to publish to npm. Credit and thanks to @adamwathan
+This repo was originally isolated from [https://github.com/tailwindcss/plugin-examples](https://github.com/tailwindcss/plugin-examples) to publish to npm. Credit and thanks to [https://github.com/adamwathan](@adamwathan)
 
 [View original demo](https://tailwindcss.github.io/plugin-examples/#css-grid)
 
