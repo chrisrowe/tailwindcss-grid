@@ -1,14 +1,6 @@
 # CSS Grid Tailwind Plugin
 
-Isolated from [https://github.com/tailwindcss/plugin-examples](https://github.com/tailwindcss/plugin-examples)
-
-[View demo](https://tailwindcss.github.io/plugin-examples/#css-grid) &middot; [View source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/css-grid/index.js)
-
-In `plugins/css-grid/index.js` you'll find an example of a plugin that adds new utilities for using [CSS Grid Layout](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
-
-![](https://user-images.githubusercontent.com/4323180/37525015-fb5c78f2-2901-11e8-97be-18c66d12bf84.png)
-
-It exposes four configuration options:
+## Configuration options:
 
 - `grids`, for specifying all of the grid sizes you'd like to generate
 - `gaps`, for specifying the gap sizes you'd like to generate
@@ -54,3 +46,11 @@ The plugin generates the following sets of classes:
 - `.grid-dense` applies `grid-auto-flow: dense`
 
 It's not really practical to expose all of the power of CSS Grid through utilities, but this plugin is a good example of using CSS Grid to replace a cell-only float or Flexbox grid.
+
+---
+
+This was originally isolated from [https://github.com/tailwindcss/plugin-examples](https://github.com/tailwindcss/plugin-examples) to publish to npm
+
+[View demo](https://tailwindcss.github.io/plugin-examples/#css-grid) &middot; [View source](https://github.com/tailwindcss/plugin-examples/blob/master/plugins/css-grid/index.js)
+
+![](https://user-images.githubusercontent.com/4323180/37525015-fb5c78f2-2901-11e8-97be-18c66d12bf84.png)
