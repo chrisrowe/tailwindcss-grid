@@ -42,7 +42,7 @@ The plugin generates the following sets of classes:
 - `.grid` for setting `display: grid` on an element
 - `.grid-columns-{size}` for specifying the number of columns in the grid
 - `.col-span-{columns}` for specifying how many columns a cell should span
-- `.grid-gap-{size}` for specifying the size of the gap between columns/rows, if the name ends with -x or -y grid-[column/row]-gap will be used
+- `.grid-gap-{size}` for specifying the size of the gap between columns/rows, if the name ends with -x or -y `grid-[column/row]-gap` will be used
 - `.grid-automin-{size}` for applying the minimum width of the columns using auto-fit and minmax (the max is 1fr)
 - `.col-start-{line}` and `.col-end-{line}` for specifying a cell's start and end grid lines explicitly (useful for reordering cells or leaving gaps)
 - `.row-span-{columns}` for specifying how many rows a cell should span
