@@ -1,15 +1,17 @@
 const _ = require('lodash')
 
-module.exports = function({
+module.exports = function ({
   grids = _.range(1, 12),
   gaps = {},
   autoMinWidths = {},
   variants = ['responsive'],
 }) {
-  return function({ e, addUtilities }) {
+  return function ({
+    e,
+    addUtilities
+  }) {
     addUtilities(
-      [
-        {
+      [{
           '.grid': {
             display: 'grid',
           },
@@ -20,11 +22,11 @@ module.exports = function({
           },
         },
         ..._.map(gaps, (size, name) => {
-          const gridGap = name.endsWith('-y')
-            ? 'gridRowGap'
-            : name.endsWith('-x')
-            ? 'gridColumnGap'
-            : 'gridGap'
+          const gridGap = name.endsWith('-y') ?
+            'gridRowGap' :
+            name.endsWith('-x') ?
+            'gridColumnGap' :
+            'gridGap'
 
           return {
             [`.${e(`grid-gap-${name}`)}`]: {
