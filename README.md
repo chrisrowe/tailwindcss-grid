@@ -57,4 +57,4 @@ It's not really practical to expose all of the power of CSS Grid through utiliti
 
 This repo was originally isolated from [https://github.com/tailwindcss/plugin-examples](https://github.com/tailwindcss/plugin-examples) to publish to npm.
 
-Credit and thanks to [@adamwathan](/adamwathan) - [view original demo](https://tailwindcss.github.io/plugin-examples/#css-grid)
+Credit and thanks to [@adamwathan](https://github.com/adamwathan) - [view original demo](https://tailwindcss.github.io/plugin-examples/#css-grid)
