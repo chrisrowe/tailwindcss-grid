@@ -1,7 +1,7 @@
 const _ = require('lodash')
 
 module.exports = function ({
-  grids = _.range(1, 12),
+  grids = _.range(1, 13),
   gaps = {},
   autoMinWidths = {},
   variants = ['responsive'],
